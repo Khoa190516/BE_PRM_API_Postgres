@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  be_prm_api_postgres:
+    image: ${DOCKER_REGISTRY-}beprmapipostgres
+    build:
+      context: .
+      dockerfile: Dockerfile
